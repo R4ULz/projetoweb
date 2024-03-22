@@ -1,16 +1,16 @@
 <div class="container mt-4">
-    <form>
+    <form name="cadastro" method="post" action="/cadastrar">
         <div class="mb-3">
             <label for="exampleInputName" class="form-label">Nome:</label>
-            <input type="text" class="form-control" id="exampleInputName">
+            <input type="text" name="nome" class="form-control" id="exampleInputName">
         </div>
         <div class="mb-3">
             <label for="exampleInputTelefone" class="form-label">Telefone:</label>
-            <input type="email" class="form-control" id="exampleInputTelefone">
+            <input type="text" name="telefone" class="form-control" id="exampleInputTelefone">
         </div>
         <div class="mb-3">
             <label class="form-label">Origem:</label>
-            <select class="form-select" aria-label="Default select example">
+            <select name="origem" class="form-select" aria-label="Default select example">
                 <option selected>Celular</option>
                 <option value="1">Email</option>
                 <option value="2">Carta</option>
@@ -18,11 +18,11 @@
         </div>
         <div class="mb-3">
             <label class="form-label">Data do contato:</label>
-            <input type="date" class="form-control" id="exampleInputTelefone">
+            <input type="date"  name="data_contato" class="form-control" id="exampleInputTelefone">
         </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Observação</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control"  name="observacao" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Cadastrar</button>
     </form>
